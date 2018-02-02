@@ -105,6 +105,7 @@ public class TrainLayout implements LayoutManager, LayoutManager2, java.io.Seria
 
 	/**
      * Creates a train layout with a default horizontal gap.
+     * @param self the container to be layouted
      * @since private
      */
     public TrainLayout(Container self)
@@ -117,6 +118,7 @@ public class TrainLayout implements LayoutManager, LayoutManager2, java.io.Seria
      * <p>
      * All <code>TrainLayout</code> constructors defer to this one.
      * @param     hgap   the horizontal gap
+     * @param	self	the container to be layouted
      * @exception   IllegalArgumentException  if the value of the
      * 				horizontal gap is less than zero.
      */
@@ -957,7 +959,7 @@ public class TrainLayout implements LayoutManager, LayoutManager2, java.io.Seria
     /** invalidates Layout, minimum and maximum sizes
      *  of content will be recalculated
      *
-     * @param name the name of the component
+     * @param constraints not used
      * @param comp the component to be added
      */
     @Override

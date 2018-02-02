@@ -109,6 +109,7 @@ public class TotemLayout implements LayoutManager, LayoutManager2, java.io.Seria
 
     /**
      * Creates a totem layout with a default vertical gap.
+     * @param self the container to be layouted
      * @since private
      */
     public TotemLayout(Container self)
@@ -121,6 +122,7 @@ public class TotemLayout implements LayoutManager, LayoutManager2, java.io.Seria
      * <p>
      * All <code>TotemLayout</code> constructors defer to this one.
      * @param     vgap   the vertical gap
+     * @param	self the container to be layouted
      * @exception   IllegalArgumentException  if the value of the
      * 				vertical gap is less than zero.
      */
@@ -956,7 +958,7 @@ public class TotemLayout implements LayoutManager, LayoutManager2, java.io.Seria
     /** invalidates Layout, minimum and maximum sizes
      *  of content will be recalculated
      *
-     * @param name the name of the component
+     * @param constraints not used
      * @param comp the component to be added
      */
     @Override
